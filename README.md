@@ -17,14 +17,18 @@ Este portfólio foi criado para demonstrar meus projetos acadêmicos e profissio
 
 - `index.html` - Página inicial com apresentação e projetos em destaque
 - `about.html` - Página com informações detalhadas sobre mim e minha trajetória
-- `projects.html` - Página dedicada aos projetos (em desenvolvimento)
+- `projects.html` - Página dedicada aos projetos
 - `css/` - Diretório com os estilos do site
 - `js/` - Diretório com os scripts JavaScript
 - `img/` - Diretório com as imagens do projeto
 
+## ✨ Funcionalidades
+
+- **Alternância de Cor de Fundo:** Um botão na página inicial permite alternar a cor de fundo entre branco e azul.
+
 ## 🌟 Projetos em Destaque
 
-1. **Jogo Acessível**
+1. **BrainPop!**
    - Jogo de memória e lógica com recursos de acessibilidade
    - Implementação de braile e áudio descritivo
    - Foco em inclusão e acessibilidade
