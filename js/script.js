@@ -1,21 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-
     const changeColorBtn = document.getElementById('changeColorBtn');
-    const introSection = document.querySelector('.intro');
-
-    const colors = [
-        '#f8f9fa',
-        '#e0f7fa',
-        '#fbe9e7',
-        '#e8f5e9',
-        '#f3e5f5'
-    ];
-
-    let currentColorIndex = 0;
-
-    changeColorBtn.addEventListener('click', function() {
-        currentColorIndex = (currentColorIndex + 1) % colors.length;
-        introSection.style.backgroundColor = colors[currentColorIndex];
-    });
-
+    let isBlue = false;
+    if (changeColorBtn) {
+        changeColorBtn.addEventListener('click', function() {
+            if (isBlue) {
+                document.body.style.backgroundColor = '#fff';
+            } else {
+                document.body.style.backgroundColor = '#0074D9';
+            }
+            isBlue = !isBlue;
+        });
+    }
 });
