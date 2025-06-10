@@ -3,31 +3,68 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfólio de João Pedro </title>
+    <title>Portfólio de João Pedro</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
     <header>
         <nav>
             <ul class="nav-list">
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="projects.html">Meus projetos</a></li>
+                <li><a href="projects.html">Meus Projetos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="intro">
-            <h1>Bem-vindo ao meu Portfólio</h1>
-            <p>Aqui você ira conher um pouco sobre minha jornada.</p>
-            <button id="changeColorBtn">Mudar cor do fundo</button>
+            <h1>João Pedro</h1>
+            <p>Estudante de Ciência da Computação apaixonado por transformar ideias em soluções interativas e acessíveis.</p>
+            <div class="cta-buttons">
+                <a href="projects.html" class="btn">Meus Projetos</a>
+                <a href="about.html" class="btn btn-secondary">Sobre Mim</a>
+            </div>
+            <button id="changeColorBtn" class="color-changer">Mudar cor de fundo</button>
         </section>
+
+        <section class="featured-projects">
+            <h2>Projetos em Destaque</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="img/jogo-acessivel-2.jpeg" alt="Jogo acessível para deficientes visuais">
+                    <h3>Jogo Acessível</h3>
+                    <p>Jogo de memória e lógica com recursos de acessibilidade como braile e áudio descritivo.</p>
+                    <a href="about.html">Ver detalhes</a>
+                </div>
+                <div class="project-card">
+                    <div class="image-placeholder">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <h3>Missão no Fundo do Mar</h3>
+                    <p>Jogo de resgate de tesouros submarinos utilizando estruturas de dados e a biblioteca Raylib.</p>
+                    <a href="projects.html">Ver detalhes</a>
+                </div>
+                 </div>
+        </section>
+
+        <section class="skills">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-list">
+                <span>Python</span>
+                <span>C</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Metodologias Ágeis</span>
+                <span>Raylib</span>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>© 2025 João Pedro
+        <p>© 2025 João Pedro</p>
     </footer>
 
     <script src="js/script.js"></script>
