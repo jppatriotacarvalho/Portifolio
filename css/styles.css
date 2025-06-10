@@ -1,3 +1,17 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #343a40;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --card-bg: #fff;
+    --border-color: #e0e0e0;
+    --dark-text-secondary: #666;
+    --light-text-secondary: #777;
+    --darker-blue: #0056b3;
+    --medium-grey: #6c757d;
+    --lighter-bg: #e9ecef;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +21,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
 }
 
 main {
@@ -21,9 +35,9 @@ h1, h2, h3 {
 }
 
 header {
-    background: #fff;
+    background: var(--card-bg);
     padding: 1rem 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border-color);
     text-align: center;
 }
 
@@ -36,21 +50,21 @@ header {
 
 .nav-list a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
     font-weight: bold;
     padding: 5px 10px;
     transition: color 0.3s;
 }
 
 .nav-list a:hover {
-    color: #007bff;
+    color: var(--primary-color);
 }
 
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #343a40;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--card-bg);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -60,24 +74,24 @@ header {
 }
 
 .btn:hover {
-    background-color: #555;
+    background-color: #555; /* Keep specific dark grey for hover if desired, or make a variable */
 }
 
 .btn.btn-secondary {
     background-color: transparent;
-    color: #343a40;
-    border-color: #343a40;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .btn.btn-secondary:hover {
-    background-color: #343a40;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--card-bg);
 }
 
 .intro {
     text-align: center;
     padding: 80px 20px;
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
 }
 
 .intro h1 {
@@ -98,7 +112,7 @@ header {
 .color-changer {
     background: none;
     border: none;
-    color: #6c757d;
+    color: var(--medium-grey);
     text-decoration: underline;
     cursor: pointer;
     font-size: 0.9rem;
@@ -121,7 +135,7 @@ header {
 }
 
 .project-card {
-    background: #fff;
+    background: var(--card-bg);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     overflow: hidden;
@@ -145,28 +159,28 @@ header {
 
 .project-card p {
     padding: 0 20px 20px;
-    color: #666;
+    color: var(--dark-text-secondary);
 }
 
 .project-card a {
     display: block;
     padding: 15px 20px;
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
     text-align: center;
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 .project-card a:hover {
-    background-color: #e9ecef;
+    background-color: var(--lighter-bg);
 }
 
 .image-placeholder {
     width: 100%;
     height: 200px;
-    background-color: #343a40;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--card-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,7 +190,7 @@ header {
 
 .skills {
     padding: 60px 0;
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
     text-align: center;
 }
 
@@ -193,7 +207,7 @@ header {
 }
 
 .skills-list span {
-    background-color: #e9ecef;
+    background-color: var(--lighter-bg);
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: 500;
@@ -228,7 +242,7 @@ header {
     text-align: center;
     margin-top: 50px;
     padding: 40px;
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
     border-radius: 8px;
 }
 
@@ -266,7 +280,7 @@ header {
 
 .project-item {
     display: flex;
-    background-color: #fff;
+    background-color: var(--card-bg);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     margin-bottom: 40px;
@@ -302,12 +316,12 @@ header {
 .project-details h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #343a40;
+    color: var(--secondary-color);
 }
 
 .project-details p {
     margin-bottom: 1rem;
-    color: #666;
+    color: var(--dark-text-secondary);
     line-height: 1.6;
 }
 
@@ -315,12 +329,12 @@ header {
     font-size: 1.2rem;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #343a40;
+    color: var(--secondary-color);
 }
 
 .collaborators {
     font-size: 0.9rem;
-    color: #777;
+    color: var(--light-text-secondary);
     margin-top: 15px;
 }
 
@@ -329,8 +343,8 @@ header {
 }
 
 footer {
-    background: #343a40;
-    color: #fff;
+    background: var(--secondary-color);
+    color: var(--card-bg);
     text-align: center;
     padding: 1.5rem 0;
     margin-top: 50px;
@@ -360,5 +374,92 @@ footer {
     }
     .project-image img {
         max-width: 90%;
+    }
+}
+
+/* Certificates Section */
+.certificates-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--light-bg);
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.certificates-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.certificate-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.certificate-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.certificate-card .issuer {
+    font-size: 1rem;
+    color: #555; /* Kept specific grey for clarity */
+    margin-bottom: 5px;
+}
+
+.certificate-card .date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.certificate-card .competencies {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.certificate-card .btn-view-certificate {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.certificate-card .btn-view-certificate:hover {
+    background-color: var(--darker-blue);
+}
+
+@media (max-width: 600px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
     }
 }

@@ -32,6 +32,7 @@ Este portfólio foi criado para demonstrar meus projetos acadêmicos e profissio
    - Jogo de memória e lógica com recursos de acessibilidade
    - Implementação de braile e áudio descritivo
    - Foco em inclusão e acessibilidade
+   - **Colaboradores:** Arthur da Fonte de Oliveira, Walter Maia, Filipe Santos, Bernardo, Lucas, Gabriel Ribeiro, Giovana, Manuela e Antônio.
 
 2. **Missão no Fundo do Mar**
    - Jogo de resgate de tesouros submarinos
@@ -52,7 +53,6 @@ Este portfólio foi criado para demonstrar meus projetos acadêmicos e profissio
 
 - GitHub: [jppatriotacarvalho](https://github.com/jppatriotacarvalho)
 - LinkedIn: [João Pedro](https://www.linkedin.com/in/-joao-pedro/)
-- Email: joaopatriota2006@gmail.com
 
 ## 📄 Licença
 
